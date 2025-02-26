@@ -13,7 +13,7 @@ jobs:
   test:
     # ubuntuで実行
     runs-on: ubuntu-latest
-    enviroment: storybook-auto-build
+    environment: storybook-auto-build
     # ジョブ内で実行する処理リスト
     steps:
     # GitHub のリポジトリを取得
