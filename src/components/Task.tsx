@@ -27,7 +27,7 @@ export default function Task ({ task: { id, title, state }, pinTask, archiveTask
         <input 
         type="checkbox" 
         name="checked" 
-        id={`archiveTask-${id}`} 
+        id={`archiveTask-${id}`}
         />
         <span 
         className="checkbox-custom"
@@ -43,6 +43,7 @@ export default function Task ({ task: { id, title, state }, pinTask, archiveTask
           readOnly={true}
           name="title"
           placeholder="Input title"
+          style={{ backgroundColor: "pink" }}
         />
       </label>
 
