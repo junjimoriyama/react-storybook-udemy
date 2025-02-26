@@ -2,14 +2,18 @@
 name: 'Chromatic Publish'
 
 # git pushしたときにGitHubActionsのワークフローを自動実行
-on: push
-
+on: 
+  push:
+    branches:
+      - main
+      - change-task-bg
 # 処理の塊
 jobs:
 # 処理の塊に対しての名前
   test:
     # ubuntuで実行
     runs-on: ubuntu-latest
+    enviroment: storybook-auto-build
     # ジョブ内で実行する処理リスト
     steps:
     # GitHub のリポジトリを取得
